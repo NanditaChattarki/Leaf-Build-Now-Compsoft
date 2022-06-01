@@ -1,0 +1,734 @@
+<!--LEAF BUILD USN-1BG19CS059(NANDITA);USN-1BG19CS060(NEHA)-->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive plants website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Leaf Now
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                    <li class="nav__item">
+                             <a href="#login" class="nav__link">Login</a>
+                         </li>
+                    
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Leaf Now a place where plant <br>
+                            addicts unite :)
+                        </h1>
+                        <p class="home__description">
+                           Connecting plant enthusiasts to exchange , sell plants or donate seeds as a part of the <br>
+                           green initiative that we started two years back.
+        
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!--==========================LOGIN==============================-->
+ <section class="login" id="login">
+    <div class="login__container container grid">
+       
+
+        <div class="login__data">
+            <h1 class="login__title">
+                 
+            </h1>
+            <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                * {box-sizing: border-box}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password] {
+                  width: 100%;
+                  padding: 7px;
+                  margin: 5px 0 11px 0;
+                  display: inline-block;
+                  border: none;
+                  background: #f1f1f1;
+                }
+                
+                input[type=text]:focus, input[type=password]:focus {
+                  background-color: #ddd;
+                  outline: none;
+                }
+                
+                hr {
+                  border: 0px solid #f1f1f1;
+                  margin-bottom: 12px;
+                }
+                
+                /* Set a style for all buttons */
+                button {
+                  background-color: #04AA6D;
+                  color: white;
+                  padding: 7px 10px;
+                  margin: 4px 0;
+                  border: none;
+                  cursor: pointer;
+                  width: 50%;
+                  opacity: 0.9;
+                }
+                
+                button:hover {
+                  opacity:1;
+                }
+                
+                /* Extra styles for the cancel button */
+                .cancelbtn {
+                  padding: 7px 10px;
+                  background-color: #f44336;
+                }
+                
+                /* Float cancel and signup buttons and add an equal width */
+                .cancelbtn, .signupbtn {
+                  float: left;
+                  width: 50%;
+                }
+                
+                /* Add padding to container elements */
+                .container {
+                  padding: 4px;
+                }
+                
+                /* Clear floats */
+                .clearfix::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                
+                /* Change styles for cancel button and signup button on extra small screens */
+                @media screen and (max-width: 300px) {
+                  .cancelbtn, .signupbtn {
+                     width: 50%;
+                  }
+                }
+                </style>
+                <body>
+                
+                <form action="signup.php" method="POST" style="border:1px solid #ccc">
+                  <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required="">
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required="">
+                
+                    <label for="pswrepeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required="">
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                    
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                    <div class="clearfix">
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <button type="submit" value="signup" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+                
+                </body>
+                <h1 class="login__title">
+                    
+               </h1>
+               <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                form {border: 0px solid #f1f1f1;}
+                
+                input[type=text], input[type=password] {
+                  width: 100%;
+                  padding: 6px 10px;
+                  margin: 4px 0;
+                  display: inline-block;
+                  border: 0px solid #ccc;
+                  box-sizing: border-box;
+                }
+                
+                button {
+                  background-color: #04AA6D;
+                  color: white;
+                  padding: 7px 10px;
+                  margin: 8px 0;
+                  border: none;
+                  cursor: pointer;
+                  width: 100%;
+                }
+                
+                button:hover {
+                  opacity: 0.8;
+                }
+                
+                .cancelbtn {
+                  width: auto;
+                  padding: 5px 9px;
+                  background-color: #f44336;
+                }
+                
+                .imgcontainer {
+                  text-align: center;
+                  margin: 14px 0 12px 0;
+                }
+                
+                img.avatar {
+                  width: 40%;
+                  border-radius: 50%;
+                }
+                
+                .container {
+                  padding: 16px;
+                }
+                
+                span.psw {
+                  float: right;
+                  padding-top: 16px;
+                }
+                
+                /* Change styles for span and cancel button on extra small screens */
+                @media screen and (max-width: 300px) {
+                  span.psw {
+                     display: block;
+                     float: none;
+                  }
+                  .cancelbtn {
+                     width: 100%;
+                  }
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>Login Form</h2>
+                
+                <form action="loginnow.php" method="post">
+                  <div class="imgcontainer">
+                    <img src="data:image/png;base64,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" alt="Avatar" class="avatar">
+                  </div>
+                
+                  <div class="container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                 
+                  
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                
+                </form>
+                
+                </body>
+
+
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="about__description">
+                            We have over 4000+ unbiased reviews and our customers 
+                            trust our plant process and delivery service every time
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start your <br> plants off right
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Choose Plant</h3>
+                            <p class="steps__card-description">
+                                We have several varieties plants you can choose from.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Place an order</h3>
+                            <p class="steps__card-description">
+                                Once your order is placed we move to the next step, which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Get plants delivered</h3>
+                            <p class="steps__card-description">
+                                Our delivery process is easy, you receive the plant direct to your door.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Check out our <br> products
+                </h2>
+
+                <p class="product__description">
+                    Here are some selected plants from our nursery.
+
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="https://media.istockphoto.com/photos/bonsai-tree-picture-id155908126?k=20&m=155908126&s=612x612&w=0&h=05tgM528GvkWQXtFiumwb26rajq8aggWUc8_zMCdkKk=" alt="" class="product__img">
+
+                        <h3 class="product__title">Bonsai Plant</h3>
+                        <span class="product__price">₹1700</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product2.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Cactus Plant</h3>
+                        <span class="product__price">₹930</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product3.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Aloe Vera Plant</h3>
+                        <span class="product__price">₹620 </span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product4.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Succulent Plant</h3>
+                        <span class="product__price">₹465</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="https://www.houseplantsexpert.com/image-files/cast-iron-plant.jpg" alt="" class="product__img">
+
+                        <h3 class="product__title">Cast iron Plant</h3>
+                        <span class="product__price">₹850</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product6.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Green Plant</h3>
+                        <span class="product__price">₹670</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I pick the right plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Check for insects by looking at the underside of the leaves.
+                                   Avoid plants with drought stress, indicated by yellow foliage.
+                                   Still unsure? let someone from our nursery help you!
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes yellowing of leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Poor drainage or improper watering. Either too much watering or 
+                                   too little watering of the plants leads to yellowing.In overly wet soil, roots
+                                   cannot breathe and underwatering leads to drought, has the same effect.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Do indoor plants need sunlight?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                  Light is one of the most important factors for growing 
+                                  house plants.Most plants need some amount of light in order to survive
+                                  but, shade-loving plants can easily get bywith indirect light or even 
+                                  artifical light from regular light blubs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Can indoor plants reduce stress?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   YES. It reduces stress and boots your mood. Caring for plants
+                                   can reduce physiological and physiological stress compared with mental work
+                                   this is because caring for plants suppress sympathetic nervous system
+                                   activity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +91 9845729312
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    supportleafnow@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Leaf Now
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay updated
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">560085 - Bansankari</li>
+                        <li class="footer__information">560069 - Jayanagar</li>
+                        <li class="footer__information">22-44-3456</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+9845729312</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Leaf Now. Don't stop BE-LEAFING!</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
